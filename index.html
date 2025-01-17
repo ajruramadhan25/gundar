@@ -35,37 +35,48 @@
 
     <main>
         <section class="info-section">
-            <div class="card">
             <h2>Latest Update</h2>
-            
             <div class="info-grid">
-                <div class="info-card">
-                    <img src="assets/img/ff.jpg" alt="Free Fire">
-                    <h3>Free Fire Tournament</h3>
-                    <p>Tim RRQ Kazu siap bertanding di babak final dengan performa terbaik!</p>
+                <div class="lu">
+                    <a href="javascript:void(0)" onclick="showModal('assets/img/lu1.jpeg')">
+                    <img src="assets/img/lu1.jpeg" alt="1">
+                    </a>
                 </div>
-                <div class="info-card">
-                    <img src="assets/img/ml.jpg" alt="Mobile Legends">
-                    <h3>Mobile Legends: Bang Bang</h3>
-                    <p>RRQ Hoshi dinobatkan sebagai tim terbaik di tahun 2024.</p>
+                <div id="imageModal" class="modal">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <img id="modalImage" src="" alt="Full view">
                 </div>
-                <div class="info-card">
-                    <img src="assets/img/valo.jpg" alt="Valorant">
-                    <h3>Valorant League</h3>
-                    <p>RRQ Valorant memasuki fase playoff dengan semangat tinggi.</p>
+
+                <div class="lu">
+                    <a href="javascript:void(0)" onclick="showModal('assets/img/lu2.jpeg')">
+                    <img src="assets/img/lu2.jpeg" alt="2">
+                    </a>
                 </div>
-                <div class="info-card">
-                    <img src="assets/img/pubg.jpg" alt="PUBG Mobile">
-                    <h3>PUBG Mobile Update</h3>
-                    <p>RRQ Athena memimpin klasemen dengan skor luar biasa.</p>
+                <div id="imageModal" class="modal">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <img id="modalImage" src="" alt="Full view">
+                </div>
+
+                <div class="lu">
+                    <a href="javascript:void(0)" onclick="showModal('assets/img/lu3.jpeg')">
+                    <img src="assets/img/lu3.jpeg" alt="3">
+                    </a>
+                </div>
+                <div id="imageModal" class="modal">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <img id="modalImage" src="" alt="Full view">
+                </div>
+
+                <div class="lu">
+                    <a href="javascript:void(0)" onclick="showModal('assets/img/lu4.jpeg')">
+                    <img src="assets/img/lu4.jpeg" alt="4">
+                    </a>
+                </div>
+                <div id="imageModal" class="modal">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <img id="modalImage" src="" alt="Full view">
                 </div>
             </div>
-        </div>
-        <aside>
-            <div class="hiring-banner">
-                <p>WE ARE HIRING! <strong>Legal Officer</strong></p>
-            </div>
-        </aside>
         </section>
     </main>
 
@@ -97,17 +108,34 @@
                 </div>
             </div>
         </div>
-        <aside>
-            <div class="hiring-banner">
-                <p>WE ARE HIRING! <strong>Legal Officer</strong></p>
-            </div>
-        </aside>
+        
         </section>
         
 
         
     </main>
-
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, feel free to reach out to us using the form below.</p>
+            <form action="/submit-form" method="POST" class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Your Name">
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Your Email">
+    
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required placeholder="Your Message"></textarea>
+    
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+        <aside>
+        
+        </aside>
+    </section>
+    
     <footer>
         <p>&copy; 2025 Team GUNDAR. All rights reserved.</p>
     </footer>

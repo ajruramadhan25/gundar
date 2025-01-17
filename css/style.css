@@ -203,6 +203,150 @@ footer {
     box-sizing: border-box; /* Pastikan padding tidak menambah lebar elemen */
 }
 
+/* Styling untuk gambar dalam .lu */
+.lu {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px; /* Membuat sudut gambar melengkung */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tambahkan efek bayangan */
+    transition: transform 0.3s, box-shadow 0.3s; /* Efek transisi untuk zoom */
+    cursor: pointer; /* Menampilkan kursor klik */
+}
+
+.lu img {
+    width: 100%; /* Pastikan gambar memenuhi elemen lu */
+    height: 100%; /* Memastikan gambar proporsional */
+    object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+    transition: transform 0.3s; /* Efek transisi untuk zoom pada gambar */
+}
+
+.lu:hover {
+    transform: scale(1.05); /* Sedikit membesar saat di-hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan lebih besar */
+}
+
+.lu:hover img {
+    transform: scale(1.1); /* Zoom lebih besar pada gambar */
+}
+
+/* Gaya modal */
+.modal {
+    display: none; /* Secara default modal tidak ditampilkan */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
+
+.modal.show {
+    display: flex; /* Menampilkan modal saat aktif */
+}
+
+/* Gaya untuk tombol close */
+.modal .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+/* Styling untuk bagian kontak */
+.contact-section {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contact-section .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+    text-align: left;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.contact-form button.submit-btn {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Gaya Responsif untuk Mobile */
 @media (max-width: 768px) {
     header {
