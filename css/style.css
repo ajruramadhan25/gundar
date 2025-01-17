@@ -160,7 +160,7 @@ footer {
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 10px;
-    overflow: hidden;
+    overflow: visible;
     box-shadow: 0 4px 8px rgba(64, 18, 18, 0.1);
     width: 100%; /* Sesuaikan dengan grid */
     max-width: 400px; /* Maksimal lebar */
