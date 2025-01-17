@@ -118,13 +118,7 @@ header {
     padding: 20px;
 }
 
-aside {
-    background-color: #b0592a;
-    padding: 10px;
-    margin: 10px;
-    text-align: center;
-    border-radius: 5px;
-}
+
 
 /* Footer */
 footer {
@@ -165,6 +159,12 @@ footer {
     width: 100%; /* Sesuaikan dengan grid */
     max-width: 400px; /* Maksimal lebar */
     aspect-ratio: 4 / 3; /* Proporsi kartu, misalnya 4:3 */
+}
+
+.info-card a {
+    text-decoration: none; /* Menghilangkan garis bawah */
+    color: inherit; /* Menggunakan warna teks normal */
+    display: block;
 }
 
 .info-card:hover {
@@ -313,6 +313,22 @@ footer {
     border-radius: 10px;
 }
 
+/* Styling untuk kotak gambar */
+.image-box {
+    width: 100%; /* Lebar kotak */
+    height: 300; /* Tinggi kotak */
+    overflow: hidden; /* Agar gambar tidak meluap keluar kotak */
+    border: 2px solid #ddd; /* Border kotak */
+    border-radius: 0px; /* Sudut kotak melengkung */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan kotak */
+    position: relative; /* Memungkinkan elemen lain dalam kotak jika diperlukan */
+}
+
+.image-box img {
+    width: 100%; /* Gambar memenuhi lebar kotak */
+    height: -123%; /* Gambar memenuhi tinggi kotak */
+    object-fit: cover; /* Memastikan gambar tetap proporsional dan mengisi kotak */
+}
 
 
 
