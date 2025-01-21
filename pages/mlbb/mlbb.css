@@ -82,6 +82,7 @@ a {
     color: #555; /* Warna teks */
     display: flex; /* Gunakan flex untuk ikon dan teks */
     align-items: center; /* Rata vertikal antara ikon dan teks */
+    justify-content: center;
     transition: background-color 0.3s;
     padding: 5px 10px; /* Tambah padding untuk ruang */
     border-radius: 5px; /* Sudut melengkung agar lebih halus */
@@ -119,6 +120,42 @@ a {
     top: 0; /* Mulai dari atas kotak */
     left: 0; /* Mulai dari kiri kotak */
     width: 100%; /* Lebar gambar mengikuti layar */
-    height: 200%; /* Tinggi gambar memenuhi kotak */
+    height: 120%; /* Tinggi gambar memenuhi kotak */
     object-fit: cover; /* Gambar menyesuaikan dimensi tanpa distorsi */
+}
+
+/* Optional styles for Tim Cewe */
+.team-title {
+    color: #FF6699; /* Pink color for female team */
+}
+
+/* Optional styles for Tim Cowok */
+.team-title {
+    color: #3399FF; /* Blue color for male team */
+}
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.filter-buttons button {
+    background-color: #FF6600; /* Button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding for button size */
+    font-size: 1rem; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin: 0 10px; /* Space between buttons */
+    transition: background-color 0.3s, transform 0.3s; /* Transition effects */
+}
+
+.filter-buttons button:hover {
+    background-color: #e65c00; /* Darker shade on hover */
+    transform: translateY(-2px); /* Slightly lift button on hover */
+}
+
+.filter-buttons button:active {
+    transform: translateY(0); /* Reset position on click */
 }
