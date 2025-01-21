@@ -28,6 +28,7 @@
     text-align: center;
 }
 
+
 .info-card_mlbb:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
@@ -103,3 +104,21 @@ a {
     color: #333; /* Warna teks */
 }
 
+.info-card_wp {
+    width: 100%; /* Lebar kotak mengikuti layar */
+    height: 400px; /* Tinggi kotak tetap */
+    overflow: hidden; /* Bagian gambar di luar kotak tersembunyi */
+    position: relative; /* Membuat gambar diatur secara absolut */
+    border: 2px solid #ddd;
+    border-radius: 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-card_wp img {
+    position: absolute; /* Gambar menyesuaikan posisi relatif ke kotak */
+    top: 0; /* Mulai dari atas kotak */
+    left: 0; /* Mulai dari kiri kotak */
+    width: 100%; /* Lebar gambar mengikuti layar */
+    height: 200%; /* Tinggi gambar memenuhi kotak */
+    object-fit: cover; /* Gambar menyesuaikan dimensi tanpa distorsi */
+}
