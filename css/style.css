@@ -174,7 +174,7 @@ footer {
 
 .info-card img {
     width: 100%;
-    height: 200px;
+    height: 250px;
     object-fit: cover;
 }
 
@@ -315,20 +315,26 @@ footer {
 
 /* Styling untuk kotak gambar */
 .image-box {
-    width: 100%; /* Lebar kotak */
-    height: 300; /* Tinggi kotak */
-    overflow: hidden; /* Agar gambar tidak meluap keluar kotak */
-    border: 2px solid #ddd; /* Border kotak */
-    border-radius: 0px; /* Sudut kotak melengkung */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan kotak */
-    position: relative; /* Memungkinkan elemen lain dalam kotak jika diperlukan */
+    width: 100%; /* Lebar kotak mengikuti layar */
+    height: 300px; /* Tinggi kotak tetap */
+    overflow: hidden; /* Bagian gambar di luar kotak tersembunyi */
+    position: relative; /* Membuat gambar diatur secara absolut */
+    border: 2px solid #ddd;
+    border-radius: 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .image-box img {
-    width: 100%; /* Gambar memenuhi lebar kotak */
-    height: -123%; /* Gambar memenuhi tinggi kotak */
-    object-fit: cover; /* Memastikan gambar tetap proporsional dan mengisi kotak */
+    position: absolute; /* Gambar menyesuaikan posisi relatif ke kotak */
+    top: 0; /* Mulai dari atas kotak */
+    left: 0; /* Mulai dari kiri kotak */
+    width: 100%; /* Lebar gambar mengikuti layar */
+    height: 220%; /* Tinggi gambar memenuhi kotak */
+    object-fit: cover; /* Gambar menyesuaikan dimensi tanpa distorsi */
 }
+
+
+
 
 
 
