@@ -39,7 +39,38 @@
     height: 200px;
     object-fit: cover;
 }
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50hv; /* Sesuaikan tinggi layar */
+    background: #f9f9f9; /* Contoh warna latar belakang */
+}
 
+.info-card_hm  {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+.info-card_hm img {
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+}
+.info-card_hm h3 {
+    font-size: 1.2rem;
+    margin: 15px 0 10px;
+    color: #FF6600;
+    font-weight: bold;
+}
+.info-card_hm p {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 0 10px 10px;
+}
 .info-card_mlbb h3 {
     font-size: 1.2rem;
     margin: 15px 0 10px;
