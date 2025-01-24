@@ -56,8 +56,8 @@
     text-align: center;
 }
 .info-card_hm img {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     object-fit: cover;
 }
 .info-card_hm h3 {
