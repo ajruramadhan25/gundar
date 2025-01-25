@@ -132,13 +132,13 @@ footer {
 
 /* Info Section */
 .info-section {
-    padding: 40px 20px;
+    padding: 0px 20px;
     background-color: #f4f4f4;
     text-align: center;
 }
 
 .info-section h2 {
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     font-size: 2rem;
     color: #333;
 }

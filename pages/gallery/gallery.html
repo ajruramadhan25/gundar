@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,9 @@
         <link rel="icon" href="../../assets/img/gundar.png" type="image/x-icon">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
         <link rel="stylesheet" href="../../css/style.css">
-        <link rel="stylesheet" href="pubg.css">
+        <link rel="stylesheet" href="gallery.css">
     </head>
+</head>
 <body>
     <header>
         <div class="logo">
@@ -51,55 +53,40 @@
         
     </header>
 
-
-    <main>
-        
+    <body>
+        <!-- Main Content -->
         <section class="info-section">
-            <div class="info-card_wp">
-                <img src="img/pubg.jpg" alt="Mobile Legends">
-                
-            </div>
-
-            <h2>PUBG MOBILE Divisions</h2>      
-            <div>
-                <h3 class="team-title">GUNADARMA ESPORTS</h3>
-                <div class="info-grid">
-                    <div class="info-card_mlbb">
-                        <img src="../mlbb/img/default.jpg">
-                        <h3>'ViCxSonyK'</h3>
-                        <h3>TEAM MANAGER</h3>
-                        <p class="info-text">Sony Eka S</p>
-                        <p class="info-text">Sistem Informasi</p>
-                    </div>
-                    <div class="info-card_mlbb">
-                        <img src="../mlbb/img/default.jpg">
-                        <h3>'UGxNicroASYC'</h3>
-                        <p class="info-text">Niko Revaldi Akbar</p>
-                        <p class="info-text">Informatika</p>
-                    </div>                  
-                    <div class="info-card_mlbb">
-                        <img src="../mlbb/img/default.jpg">
-                        <h3>'UGxToffuASYC'</h3>
-                        <p class="info-text">Reza Alfiansyah</p>
-                        <p class="info-text">Akutansi</p>
-                    </div> 
-                    <div class="info-card_mlbb">
-                        <img src="../mlbb/img/default.jpg">
-                        <h3>'xDziksAZP'</h3>
-                        <p class="info-text">M.Dzikra Dejananda</p>
-                        <p class="info-text">Sistem Komputer</p>
-                    </div> 
-                    <div class="info-card_mlbb">
-                        <img src="../mlbb/img/default.jpg">
-                        <h3>'xAzazeL666'</h3>
-                        <p class="info-text">Gifari Alzico Putra</p>
-                        <p class="info-text">Sistem Komputer</p>
-                    </div> 
-                </div>
-            </div>         
+            <h2>Gallery</h2>
         </section>
-    </main>
-
+        <main class="main-content">
+            
+            <div class="gallery-wrapper">
+                <button class="nav-button left" id="scroll-left">&lt;</button>
+                <div class="gallery-container">
+                    <div class="gallery">
+                        <img src="img/item1.jpg" alt="Image 1" class="gallery-item">
+                        <img src="img/item2.jpg" alt="Image 2" class="gallery-item">
+                        <img src="img/item3.jpg" alt="Image 3" class="gallery-item">
+                        <img src="img/item4.jpg" alt="Image 4" class="gallery-item">
+                        <img src="img/item5.jpg" alt="Image 5" class="gallery-item">
+                        <img src="img/item6.jpg" alt="Image 1" class="gallery-item">
+                        <img src="img/item7.jpg" alt="Image 2" class="gallery-item">
+                        
+                    </div>
+                </div>
+                <button class="nav-button right" id="scroll-right">&gt;</button>
+            </div>
+            <!-- Modal for Image Preview -->
+            <div class="modal" id="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="modal-image">
+            </div>
+            
+        </main>
+        <script src="script.js"></script>
+    </body>
+    
+    
     <script src="../../js/script.js"></script>
 </body>
 </html>
