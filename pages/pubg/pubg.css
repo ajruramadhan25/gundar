@@ -1,0 +1,167 @@
+.info-section {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #f9f9f9;
+}
+
+.info-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+.info-card_mlbb {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+
+.info-card_mlbb:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.info-card_mlbb img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 50hv; /* Sesuaikan tinggi layar */
+    background: #f9f9f9; /* Contoh warna latar belakang */
+}
+
+.info-card_hm  {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+.info-card_hm img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+.info-card_hm h3 {
+    font-size: 1.2rem;
+    margin: 15px 0 10px;
+    color: #FF6600;
+    font-weight: bold;
+}
+.info-card_hm p {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 0 10px 10px;
+}
+.info-card_mlbb h3 {
+    font-size: 1.2rem;
+    margin: 15px 0 10px;
+    color: #FF6600;
+    font-weight: bold;
+}
+
+.info-card_mlbb p {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 0 10px 10px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.team-divider {
+    height: 2px;
+    background-color: #ddd; /* Warna abu-abu muda */
+    margin: 30px 0; /* Jarak atas dan bawah */
+    border-radius: 5px; /* Sudut melengkung agar lebih halus */
+}
+
+.team-title {
+    font-size: 1.5rem;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #FF6600;
+    text-align: left;
+    font-weight: bold;
+    padding-left: 20px;
+    border-left: 5px solid #FF6600;
+}
+/* Gaya untuk jurusan dan angkatan */
+.info-text {
+    font-size: 1rem; /* Ukuran font teks */
+    color: #555; /* Warna teks */
+    display: flex; /* Gunakan flex untuk ikon dan teks */
+    align-items: center; /* Rata vertikal antara ikon dan teks */
+    justify-content: center;
+    transition: background-color 0.3s;
+    padding: 5px 10px; /* Tambah padding untuk ruang */
+    border-radius: 5px; /* Sudut melengkung agar lebih halus */
+}
+
+.info-text:hover {
+    background-color: #FFFAF0; /* Warna latar belakang saat hover */
+}
+
+.info-icon {
+    margin-right: 8px;
+    font-size: 1.2rem;
+    color: #FF6600; /* Warna ikon */
+}
+
+/* Gaya untuk jurusan dan angkatan */
+.info-card_mlbb p {
+    font-size: 0.95rem; /* Ukuran font teks */
+    margin: 10px 0;
+    color: #333; /* Warna teks */
+}
+
+.info-card_wp {
+    width: 100%; /* Lebar kotak mengikuti layar */
+    height: 400px; /* Tinggi kotak tetap */
+    overflow: hidden; /* Bagian gambar di luar kotak tersembunyi */
+    position: relative; /* Membuat gambar diatur secara absolut */
+    border: 2px solid #ddd;
+    border-radius: 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-card_wp img {
+    position: absolute; /* Gambar menyesuaikan posisi relatif ke kotak */
+    top: 0; /* Mulai dari atas kotak */
+    left: 0; /* Mulai dari kiri kotak */
+    width: 100%; /* Lebar gambar mengikuti layar */
+    height: 160%; /* Tinggi gambar memenuhi kotak */
+    object-fit: cover; /* Gambar menyesuaikan dimensi tanpa distorsi */
+}
+
+/* Optional styles for Tim Cewe */
+.team-title {
+    color: #FF6699; /* Pink color for female team */
+}
+
+/* Optional styles for Tim Cowok */
+.team-title {
+    color: #3399FF; /* Blue color for male team */
+}
+
