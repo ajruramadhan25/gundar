@@ -7,7 +7,7 @@
         <link rel="icon" href="../../assets/img/gundar.png" type="image/x-icon">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
         <link rel="stylesheet" href="../../css/style.css">
-        <link rel="stylesheet" href="tournament.html">
+        <link rel="stylesheet" href="tournament.css">
     </head>
 <body>
     
@@ -53,7 +53,95 @@
     </header>
 
     <main>
-        
-
+        <section class="tournaments">
+            <h1>Tournaments & Scrim</h1>
+            <div class="filters">
+                <button class="filter-btn" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="tournament">Tournament</button>
+                <button class="filter-btn" data-filter="scrim">Scrim</button>
+            </div>
+            <div class="card-container">
+                <!-- Card 1 (Tournament) -->
+                <div class="card" data-type="tournament">
+                    <a href="https://www.instagram.com/p/Cz8j8kuLjyR/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA%3D%3D&img_index=2"
+                    target="_blank" style="text-decoration: none;">
+                    <img src="img/T1.JPG" >
+                    <div class="card-content">
+                        <h2>Gunadarma Esports ROAD TO M5 COMMUNITY Tournament</h2>
+                        <div class="status finished">Selesai</div>
+                        <p>Penyelenggara:<br>Gunadarma E-Sport</p>
+                    </div>
+                    </a>
+                </div>
+                <!-- Card 2 (Scrim) -->
+                <!-- Uncomment this if you have scrims
+                <div class="card" data-type="scrim">
+                    <img src="" alt="Scrim 2023">
+                    <div class="card-content">
+                        <h2>Scrim 2023</h2>
+                        <p>Penyelenggara: </p>
+                        <div class="status ongoing">Berlangsung</div>
+                    </div>
+                </div>
+                -->
+                <!-- Card 3 (Tournament) -->
+                <div class="card" data-type="tournament">
+                    <a href="https://www.instagram.com/p/Cy5X__8r3ua/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA%3D%3D&img_index=2"
+                    target="_blank" style="text-decoration: none;">
+                    <img src="img/T2.JPG" >
+                    <div class="card-content">
+                        <h2>Gunadarma Esport MLBBxDUCATI Tournament</h2>
+                        <div class="status finished">Selesai</div>
+                        <p>Penyelenggara:<br>Gunadarma E-Sport</p>
+                    </div>
+                    </a>
+                </div>
+                <div class="card" data-type="tournament">
+                    <a href="https://www.instagram.com/p/Cv_ZbyarkYj/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA%3D%3D&img_index=1"
+                    target="_blank" style="text-decoration: none;">
+                    <img src="img/T3.JPG" >
+                    <div class="card-content">
+                        <h2>GUNADARMA INDONESIA INDEPENDENCE DAY TOURNAMENT</h2>
+                        <div class="status finished">Selesai</div>
+                        <p>Penyelenggara:<br>Gunadarma E-Sport</p>
+                    </div>
+                    </a>
+                </div>
+                <div class="card" data-type="tournament">
+                    <a href="https://www.instagram.com/p/Ct0ye3HrRbO/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA%3D%3D"
+                    target="_blank" style="text-decoration: none;">
+                    <img src="img/T4.JPG" >
+                    <div class="card-content">
+                        <h2>GUNADARMA ESPORTS SUMMER FESTIVAL TOURNAMENT</h2>
+                        <div class="status finished">Selesai</div>
+                        <p>Penyelenggara:<br>Gunadarma E-Sport</p>
+                    </div>
+                    </a>
+                </div>
+                <div class="card" data-type="tournament">
+                    <a href="https://www.instagram.com/p/CxN4VNfLgUs/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA%3D%3D&img_index=1"
+                    target="_blank" style="text-decoration: none;">
+                    <img src="img/T5.JPG" >
+                    <div class="card-content">
+                        <h2>PUBG MOBILE JAWARA CUP CAMPUS S8 2023</h2>
+                        <div class="status finished">Selesai</div>
+                        <p>Penyelenggara:<br>Gunadarma E-Sport</p>
+                    </div>
+                    </a>
+                </div>
+                
+                
+                <!-- Message for no scrim -->
+                <div class="no-content" id="no-content">
+                    <img src="img/noscrimyet.JPG" alt="No Scrim" />
+                    <p>No scrim yet</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    
+    
+<script src="tournament.js"></script>
 </body>
 </html>
