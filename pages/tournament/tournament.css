@@ -23,7 +23,7 @@ main {
     display: flex;
     justify-content: center;
     gap: 20px;
-    flex-wrap: nowrap;
+    flex-wrap: wrap; /* Ubah dari nowrap ke wrap untuk responsivitas */
     overflow-x: auto;
 }
 
@@ -36,6 +36,7 @@ main {
     transition: transform 0.3s;
     display: flex;
     flex-direction: column;
+    margin: 10px;
 }
 
 .card:hover {
@@ -92,6 +93,7 @@ main {
 .status.upcoming {
     background-color: #2196f3; /* Biru untuk status "Akan Datang" */
 }
+
 .filters {
     display: flex;
     justify-content: center;
@@ -117,6 +119,7 @@ main {
 .filter-btn.active {
     background-color: #4caf50;
 }
+
 .no-content {
     display: none; /* Tersembunyi secara default */
     text-align: center;
@@ -132,4 +135,49 @@ main {
 .no-content p {
     font-size: 1.2em;
     font-weight: bold;
+}
+
+/* Media Query untuk Responsif */
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column; /* Mengubah layout menjadi kolom pada layar kecil */
+        align-items: center;
+    }
+
+    .card {
+        width: 100%; /* Membuat card lebar penuh pada layar kecil */
+        max-width: 350px; /* Batasi lebar card */
+    }
+
+    .filters {
+        flex-direction: column; /* Menumpuk tombol filter secara vertikal pada layar kecil */
+        align-items: center;
+    }
+
+    .filter-btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .tournaments h1 {
+        font-size: 1.5em; /* Menyesuaikan ukuran judul di perangkat kecil */
+    }
+}
+
+@media (max-width: 480px) {
+    .card img {
+        height: 200px; /* Menyesuaikan tinggi gambar untuk layar yang lebih kecil */
+    }
+
+    .card-content h2 {
+        font-size: 1em; /* Menyesuaikan ukuran font pada card */
+    }
+
+    .card-content p {
+        font-size: 0.9em; /* Menyesuaikan ukuran font pada card */
+    }
+
+    .no-content p {
+        font-size: 1em; /* Menyesuaikan ukuran font teks tidak ada konten */
+    }
 }
