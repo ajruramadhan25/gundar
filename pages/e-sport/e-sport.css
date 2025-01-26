@@ -78,7 +78,7 @@
 
 /* Kontainer galeri */
 .gallery-container {
-    overflow-y: hidden;
+    overflow: hidden;
     scroll-behavior: smooth; /* Animasi saat scrolling */
     display: flex;
     gap: 10px; /* Jarak antar gambar */

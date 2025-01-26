@@ -1,11 +1,39 @@
 .info-section {
     padding: 0px 20px;
-    background-color: #630b0b;
+    background-color: color-mix(in srgb, #630b0b 10%, #333 10%);
     text-align: center;
+    height: 525px;
 }
 
 .info-section h2 {
     margin-bottom: 0px;
     font-size: 2rem;
-    color: #ffffff;
+    color: #630b0b;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: color-mix(in srgb, #630b0b 10%, #333 10%);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #630b0b;
+    padding: 15px 30px;
+}
+.card {
+    background-color: color-mix(in srgb, #630b0b 10%, #333 10%);
+    border: 0px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(64, 18, 18, 0.1);
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
 }
