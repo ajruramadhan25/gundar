@@ -2,7 +2,6 @@
     padding: 0px 20px;
     background-color: color-mix(in srgb, #630b0b 10%, #333 10%);
     text-align: center;
-    
 }
 
 .info-section h2 {
@@ -10,6 +9,7 @@
     font-size: 2rem;
     color: #630b0b;
 }
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -25,6 +25,7 @@ header {
     background-color: #630b0b;
     padding: 15px 30px;
 }
+
 .card {
     background-color: color-mix(in srgb, #630b0b 10%, #333 10%);
     border: 0px solid #ddd;
@@ -37,6 +38,7 @@ header {
     padding: 20px;
     box-sizing: border-box;
 }
+
 /* Wrapper galeri */
 .gallery-wrapper {
     position: relative;
@@ -119,6 +121,41 @@ header {
     .nav-button {
         width: 30px;
         height: 30px;
+        font-size: 1rem;
+    }
+}
+
+/* Media Query untuk Responsif pada Layar Kecil */
+@media screen and (max-width: 480px) {
+    .info-section {
+        padding: 15px; /* Mengurangi padding */
+    }
+
+    .info-section h2 {
+        font-size: 1.5rem; /* Mengurangi ukuran font */
+    }
+
+    header {
+        flex-direction: column; /* Menumpuk elemen header secara vertikal */
+        padding: 10px 15px;
+    }
+
+    .gallery-wrapper {
+        padding: 5px 0;
+    }
+
+    .gallery-container {
+        gap: 5px; /* Menurunkan gap antar gambar */
+    }
+
+    .gallery-item {
+        width: 120px; /* Mengatur ukuran gambar menjadi lebih kecil */
+        height: 100px; /* Menyesuaikan tinggi gambar */
+    }
+
+    .nav-button {
+        width: 28px;
+        height: 28px;
         font-size: 1rem;
     }
 }

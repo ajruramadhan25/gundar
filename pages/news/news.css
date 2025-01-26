@@ -10,6 +10,7 @@
     font-size: 2rem;
     color: #630b0b;
 }
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -25,6 +26,7 @@ header {
     background-color: #630b0b;
     padding: 15px 30px;
 }
+
 .card {
     background-color: color-mix(in srgb, #630b0b 10%, #333 10%);
     border: 0px solid #ddd;
@@ -36,4 +38,40 @@ header {
     margin: 0;
     padding: 20px;
     box-sizing: border-box;
+}
+
+/* Media Query untuk Responsif */
+@media (max-width: 768px) {
+    .info-section {
+        height: auto; /* Menyesuaikan tinggi bagian info untuk perangkat kecil */
+        padding: 20px;
+    }
+
+    .info-section h2 {
+        font-size: 1.5rem; /* Menyesuaikan ukuran font pada header info */
+    }
+
+    header {
+        flex-direction: column; /* Menumpuk header pada layar kecil */
+        padding: 10px 20px;
+    }
+
+    .card {
+        width: 100%; /* Membuat card lebar penuh pada layar kecil */
+        margin-bottom: 20px; /* Menambahkan jarak bawah antar card */
+    }
+}
+
+@media (max-width: 480px) {
+    .info-section {
+        padding: 15px; /* Mengurangi padding untuk perangkat kecil */
+    }
+
+    .info-section h2 {
+        font-size: 1.2rem; /* Menyesuaikan ukuran font pada header info untuk perangkat kecil */
+    }
+
+    header {
+        padding: 10px 15px; /* Menyesuaikan padding pada header */
+    }
 }
