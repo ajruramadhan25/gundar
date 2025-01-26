@@ -140,8 +140,16 @@ footer {
 .info-section h2 {
     margin-bottom: 0px;
     font-size: 2rem;
-    color: #333;
+    color: #999696;
 }
+.info-section h4 {
+    margin-bottom: 0px; /* Jarak bawah */
+    font-size: 1rem; /* Ukuran font */
+    color: #a3a3a3; /* Warna teks */
+    padding-left: 200px; /* Jarak dari sisi kiri */
+    padding-right: 200px; /* Jarak dari sisi kanan */
+}
+
 
 .info-grid {
     display: grid;
