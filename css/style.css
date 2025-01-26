@@ -4,14 +4,14 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f8f9fa;
+    background-color: #630b0b;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #7a2c17;
+    background-color: #630b0b;
     padding: 15px 30px;
 }
 

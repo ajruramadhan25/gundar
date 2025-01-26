@@ -1,0 +1,11 @@
+.info-section {
+    padding: 0px 20px;
+    background-color: #630b0b;
+    text-align: center;
+}
+
+.info-section h2 {
+    margin-bottom: 0px;
+    font-size: 2rem;
+    color: #ffffff;
+}

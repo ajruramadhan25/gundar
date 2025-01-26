@@ -1,13 +1,13 @@
 .info-section {
     padding: 0px 20px;
-    background-color: #f4f4f4;
+    background-color: #630b0b;
     text-align: center;
 }
 
 .info-section h2 {
     margin-bottom: 0px;
     font-size: 2rem;
-    color: #4f4343;
+    color: #ffffff;
 }
 .info-section h4 {
     margin-bottom: 0px; /* Jarak bawah */
@@ -22,7 +22,8 @@
     height: 400px; /* Tinggi kotak tetap */
     overflow: hidden; /* Bagian gambar di luar kotak tersembunyi */
     position: relative; /* Membuat gambar diatur secara absolut */
-   
+    border-radius: 0px;
+    background-color: #630b0b; /* Warna latar belakang kotak */
 }
 
 .info-card_wp img {
@@ -39,9 +40,8 @@
     height: 400px; /* Tinggi kotak tetap */
     overflow: hidden; /* Bagian gambar di luar kotak tersembunyi */
     position: relative; /* Membuat gambar diatur secara absolut */
-    
     border-radius: 0px;
-    
+    background-color: #630b0b; /* Warna latar belakang kotak */
 }
 
 .info-card_b img {
