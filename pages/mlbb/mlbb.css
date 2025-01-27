@@ -39,13 +39,7 @@
     height: 200px;
     object-fit: cover;
 }
-.container {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    height: 50hv; /* Sesuaikan tinggi layar */
-    background: #f9f9f9; /* Contoh warna latar belakang */
-}
+
 
 .info-card_hm  {
     background: #fff;
