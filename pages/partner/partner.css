@@ -1,0 +1,107 @@
+.partners {
+    padding: 40px 20px;
+    background-color: #f3f3f3;
+}
+
+.partners h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.partner-card {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    justify-self: center;
+}
+
+.partner-card img {
+    height: 400px;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.partner-info h3 {
+    margin: 0;
+    font-size: 2rem;
+    color: #333;
+}
+
+.partner-info p {
+    margin: 40px 0;
+    color: #555;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+.visit-button {
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: #ff9900;
+    font-weight: bold;
+    border: 1px solid #ff9900;
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.visit-button:hover {
+    background-color: #ff9900;
+    color: white;
+}
+
+/* Media Queries untuk perangkat kecil */
+@media (max-width: 768px) {
+    .partner-card {
+        flex-direction: column; /* Atur flex jadi kolom untuk layar kecil */
+        align-items: center;
+        width: 90%; /* Lebar penuh layar */
+        padding: 15px; /* Kurangi padding */
+    }
+
+    .partner-card img {
+        height: 200px; /* Kurangi tinggi gambar */
+        margin-right: 0; /* Hilangkan margin kanan */
+        margin-bottom: 15px; /* Tambahkan jarak bawah */
+    }
+
+    .partner-info h3 {
+        font-size: 1.5rem; /* Ukuran font lebih kecil */
+    }
+
+    .partner-info p {
+        font-size: 1rem; /* Ukuran teks lebih kecil */
+        margin: 20px 0; /* Kurangi margin */
+    }
+
+    .visit-button {
+        font-size: 0.8rem; /* Ukuran font lebih kecil */
+        padding: 5px 10px; /* Padding lebih kecil */
+    }
+}
+
+@media (max-width: 480px) {
+    .partners h2 {
+        font-size: 1.5rem; /* Ukuran heading lebih kecil */
+    }
+
+    .partner-card img {
+        height: 150px; /* Kurangi tinggi gambar untuk layar sangat kecil */
+    }
+
+    .partner-info p {
+        font-size: 0.9rem; /* Ukuran font lebih kecil lagi */
+    }
+
+    .visit-button {
+        font-size: 0.7rem; /* Ukuran tombol lebih kecil */
+        padding: 4px 8px; /* Padding tombol lebih kecil */
+    }
+}

@@ -132,7 +132,7 @@ footer {
 
 /* Info Section */
 .info-section {
-    padding: 0px 20px;
+    padding: 10px 20px;
     background-color: #f4f4f4;
     text-align: center;
 }
@@ -157,7 +157,7 @@ footer {
     overflow: visible;
     box-shadow: 0 4px 8px rgba(64, 18, 18, 0.1);
     width: 100%; /* Sesuaikan dengan grid */
-    max-width: 400px; /* Maksimal lebar */
+    max-width: 500px; /* Maksimal lebar */
     aspect-ratio: 4 / 3; /* Proporsi kartu, misalnya 4:3 */
 }
 

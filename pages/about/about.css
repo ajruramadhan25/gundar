@@ -5,7 +5,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: white;
+    background-color: #f9f9f9;
 }
 
 .content {
@@ -55,4 +55,51 @@ body {
     max-width: 800px;
     margin: 20px auto;
     text-align: justify;
+}
+
+.info-card_b {
+    width: 100%; /* Lebar kotak mengikuti layar */
+    height: 200px; /* Tinggi kotak tetap */
+    overflow: hidden; /* Bagian gambar di luar kotak tersembunyi */
+    position: relative; /* Membuat gambar diatur secara absolut */
+    border-radius: 0px;
+    background-color: #f9f9f9; /* Warna latar belakang kotak */
+}
+
+.info-card_b img {
+    position: absolute; /* Gambar menyesuaikan posisi relatif ke kotak */
+    top: 50%; /* Posisi tengah vertikal */
+    left: 50%; /* Posisi tengah horizontal */
+    width: 200px; /* Lebar gambar tetap */
+    transform: translate(-50%, -50%); /* Geser gambar agar pusatnya tepat di tengah kotak */
+    object-fit: cover; /* Gambar menyesuaikan dimensi tanpa distorsi */
+}
+/* Media Queries untuk perangkat kecil (ponsel) */
+@media (max-width: 768px) {
+    .content {
+        padding: 20px 10px; /* Kurangi padding untuk perangkat kecil */
+    }
+
+    .content h1 {
+        font-size: 1.5rem; /* Ukuran font lebih kecil */
+    }
+
+    .quote {
+        font-size: 1rem; /* Ukuran teks lebih kecil */
+        padding: 15px;
+    }
+
+    .quote:before, 
+    .quote:after {
+        font-size: 2.5rem; /* Ukuran tanda kutip lebih kecil */
+    }
+
+    .description {
+        font-size: 0.9rem; /* Ukuran font lebih kecil */
+    }
+
+    .info-card_b img {
+        width: 100%; /* Gambar memenuhi lebar perangkat */
+        height: auto; /* Tinggi dinamis */
+    }
 }
